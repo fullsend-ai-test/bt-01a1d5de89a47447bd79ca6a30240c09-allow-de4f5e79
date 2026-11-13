@@ -10,9 +10,4 @@ tracker:
                 - fullsend-ai/fullsend
                 - fullsend-ai/agents
 runtime: dummy
-agents:
-    - name: review
-      trigger: "false"
-    - name: retro
-      trigger: event.transition.kind == "comment_added" && has(event.transition.comment.command) && event.transition.comment.command == "/fs-retro" && event.actor.kind == "human"
 mint_url: https://bt-9f892f82-bt-mint.fullsend-ai.workers.dev
